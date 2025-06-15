@@ -1,0 +1,10 @@
+{
+  "name": "ai-shosetsu-miroku",
+  "version": "1.0.0",
+  "description": "AI小説創作プロジェクト「ミロクの100年前の宿題」",
+  "scripts": {
+    "build": "node web-reader/update-chapters.js"
+  },
+  "author": "sassan0808",
+  "license": "MIT"
+}
