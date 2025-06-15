@@ -1,0 +1,6 @@
+{
+  "buildCommand": "cd web-reader && node update-chapters.js",
+  "outputDirectory": "web-reader",
+  "framework": null,
+  "installCommand": null
+}

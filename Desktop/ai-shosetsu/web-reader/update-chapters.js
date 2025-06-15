@@ -13,8 +13,8 @@ const fs = require('fs');
 const path = require('path');
 
 // パス設定
-const CHAPTERS_DIR = '../novels/metas-awakening/chapters-v3';
-const WEB_READER_DIR = './';
+const CHAPTERS_DIR = path.join(__dirname, '../novels/metas-awakening/chapters-v3');
+const WEB_READER_DIR = __dirname;
 const OUTPUT_FILE = path.join(WEB_READER_DIR, 'script.js');
 
 // 章ファイルのマッピング
@@ -61,7 +61,7 @@ function markdownToHtml(markdown) {
  */
 function loadChapter(chapterNum) {
     const filename = CHAPTER_FILES[chapterNum];
-    const filepath = path.join(__dirname, CHAPTERS_DIR, filename);
+    const filepath = path.join(CHAPTERS_DIR, filename);
     
     try {
         const content = fs.readFileSync(filepath, 'utf8');
