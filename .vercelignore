@@ -1,0 +1,6 @@
+novels/
+versions/
+drafts/
+.git/
+*.md
+!web-reader/
